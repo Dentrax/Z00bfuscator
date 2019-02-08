@@ -2,6 +2,7 @@
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Build status](https://ci.appveyor.com/api/projects/status/l2orub6ui0hr1h08/branch/master?svg=true)](https://ci.appveyor.com/project/Dentrax/z00bfuscator/branch/master)
 
 **Z00bfuscator is the simple, open-source, cross-platform obfuscator for .NET Assemblies built in .NET Core**
 
