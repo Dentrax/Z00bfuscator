@@ -1,0 +1,27 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration:
+- Release
+- Debug
+platform: Any CPU
+skip_tags: true
+branches:
+  only:
+  - master
+clone_depth: 1
+init:
+  - cmd: git config --global core.autocrlf true
+build:
+parallel: true
+verbosity: minimal
+install:
+before_build:
+  - cmd: dotnet --version
+  - cmd: dotnet restore ./src/src.csproj --verbosity m
+build_script:
+  - dotnet build --configuration Release --output ./bin/Release
+test:
+  assemblies:
+    - Z00bfuscator.Tests.dll
+test_script:
+  - dotnet test .\Z00bfuscator.Tests\Z00bfuscator.Tests.csproj
