@@ -44,13 +44,28 @@ Z00bfuscator teaches you how obfuscating phases works as simplified as possibly.
 
 ### Screenshots
 
+Obfuscating
+--------------------------
+
 ![Obfuscating](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_cli_test-run.png)
+
+Before
+--------------------------
 
 ![Before](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_gui_before.png)
 
+After
+--------------------------
+
 ![After](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_gui_after.png)
 
+Example PE
+--------------------------
+
 ![Example .NET File](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_gui_simpleif-obfuscated.png)
+
+Example PE Class
+--------------------------
 
 ![Example .NET File - Class](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_gui_simpleif-obfuscated-class.png)
 
