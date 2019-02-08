@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Description>A simple test for Z00bfuscator</Description>
+    <Copyright>Copyright © Furkan 'Dentrax' Türkal</Copyright>
+    <PackageLicenseUrl>https://github.com/Dentrax/Z00bfuscator/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Dentrax/Z00bfuscator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Dentrax/Z00bfuscator</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
