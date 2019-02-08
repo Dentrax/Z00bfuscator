@@ -3,7 +3,7 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-**Z00bfuscator is the simple, open-source, cross-platform obfuscator for .NET Assemblies built in dotnet**
+**Z00bfuscator is the simple, open-source, cross-platform obfuscator for .NET Assemblies built in .NET Core**
 
 **Warning:** It is an old Obfuscator I made in `2013`. I converted whole project into .NET Core and made new improvements.
 
@@ -41,15 +41,15 @@ Z00bfuscator teaches you how obfuscating phases works as simplified as possibly.
 
 ### Screenshots
 
-![Obfuscating](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_cli_test-run.png)
+![Obfuscating](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/blob/master/images/ss_cli_test-run.png)
 
-![Before](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_gui_before.png)
+![Before](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/blob/master/images/ss_gui_before.png)
 
-![After](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_gui_after.png)
+![After](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/blob/master/images/ss_gui_after.png)
 
-![Example .NET File](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_gui_simpleif-obfuscated.png)
+![Example .NET File](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/blob/master/images/ss_gui_simpleif-obfuscated.png)
 
-![Example .NET File - Class](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_gui_simpleif-obfuscated-class.png)
+![Example .NET File - Class](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/blob/master/images/ss_gui_simpleif-obfuscated-class.png)
 
 ## How To Use
 
@@ -90,7 +90,7 @@ $ dotnet .\Z00bfuscator.Test\bin\Release\Obfuscated_Z00bfuscator.Test.dll
 Output
 --------------------------
 
-![Output](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/master/images/ss_cli_test.png)
+![Output](https://raw.githubusercontent.com/Dentrax/Z00bfuscator/blob/master/images/ss_cli_test.png)
 
 ## Features
 
