@@ -12,8 +12,7 @@ clone_depth: 1
 init:
   - cmd: git config --global core.autocrlf true
 build:
-parallel: true
-verbosity: minimal
+  verbosity: minimal
 install:
 before_build:
   - cmd: dotnet --version
