@@ -16,7 +16,6 @@ build:
 install:
 before_build:
   - cmd: dotnet --version
-  - cmd: dotnet restore ./src/src.csproj --verbosity m
 build_script:
   - dotnet build --configuration Release --output ./bin/Release
 test:
