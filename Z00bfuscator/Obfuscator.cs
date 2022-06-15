@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 // ====================================================
 // Z00bfuscator Copyright(C) 2013-2019 Furkan Türkal
 // This program comes with ABSOLUTELY NO WARRANTY; This is free software,
@@ -15,6 +15,7 @@ using System.Collections.Generic;
 
 using Mono.Cecil;
 using System.Text;
+using System.Linq;
 
 namespace Z00bfuscator
 {
@@ -121,32 +122,37 @@ namespace Z00bfuscator
             UpdateProgress("[2]: Starting obfuscate...", 20);
 
             int progressCurrent = 20;
-            int progressIncrement = 60 / this.m_assemblyDefinitions.Count;
-
             int assemblyIndex = -1;
-            foreach (AssemblyDefinition assembly in m_assemblyDefinitions) {
-                assemblyIndex++;
 
-                if (!assembliesToObfuscate[assemblyIndex])
-                    continue;
+            if (this.m_assemblyDefinitions.Any())
+            {
+                int progressIncrement = 60 / this.m_assemblyDefinitions.Count;
 
-                LogProgress("Obfuscating assembly: " + assembly.Name.Name);
+                foreach (AssemblyDefinition assembly in m_assemblyDefinitions)
+                {
+                    assemblyIndex++;
 
-                LogProgress("Obfuscating Types");
-                foreach (TypeDefinition type in assembly.MainModule.Types)
-                    DoObfuscateType(type);
+                    if (!assembliesToObfuscate[assemblyIndex])
+                        continue;
 
-                if (m_obfuscationInfo.ObfuscateNamespaces)
-                    LogProgress("Obfuscating Namespaces");
+                    LogProgress("Obfuscating assembly: " + assembly.Name.Name);
+
+                    LogProgress("Obfuscating Types");
+                    foreach (TypeDefinition type in assembly.MainModule.Types)
+                        DoObfuscateType(type);
+
+                    if (m_obfuscationInfo.ObfuscateNamespaces)
+                        LogProgress("Obfuscating Namespaces");
                     foreach (TypeDefinition type in assembly.MainModule.Types)
                         DoObfuscateNamespace(type);
 
-                if (m_obfuscationInfo.ObfuscateResources)
-                    LogProgress("Obfuscating Resources");
+                    if (m_obfuscationInfo.ObfuscateResources)
+                        LogProgress("Obfuscating Resources");
                     foreach (Resource resource in assembly.MainModule.Resources)
                         DoObfuscateResource(resource);
 
-                progressCurrent += progressIncrement;
+                    progressCurrent += progressIncrement;
+                }
             }
 
             UpdateProgress("[3]: Saving assembly...", 80);
