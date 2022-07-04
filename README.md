@@ -132,7 +132,7 @@ Output
 
 ## Dependencies
 
-* .NET Core 2.x SDK (for compiling and testing)
+* .NET 6 SDK (for compiling and testing)
 * Mono.Cecil
 
 ## About
