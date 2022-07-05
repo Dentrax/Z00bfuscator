@@ -2,7 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -15,18 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Z00bfuscator\Z00bfuscator.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="..\Mono.Cecil\Mono.Cecil.Mdb">
-      <HintPath>..\Mono.Cecil\Mono.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="..\Mono.Cecil\Mono.Cecil.Pdb">
-      <HintPath>..\Mono.Cecil\Mono.Cecil.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>..\Mono.Cecil\Mono.Cecil.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

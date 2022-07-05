@@ -2,7 +2,9 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject>Z00bfuscator.Program</StartupObject>
     <Copyright>Copyright © Furkan 'Dentrax' Türkal</Copyright>
     <PackageLicenseUrl>https://github.com/Dentrax/Z00bfuscator/blob/master/LICENSE</PackageLicenseUrl>
@@ -17,15 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="..\Mono.Cecil\Mono.Cecil">
-      <HintPath>..\Mono.Cecil\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="..\Mono.Cecil\Mono.Cecil.Mdb">
-      <HintPath>..\Mono.Cecil\Mono.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="..\Mono.Cecil\Mono.Cecil.Pdb">
-      <HintPath>..\Mono.Cecil\Mono.Cecil.Pdb.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Mono.Cecil" Version="0.11.4" />
   </ItemGroup>
-
+  
 </Project>
