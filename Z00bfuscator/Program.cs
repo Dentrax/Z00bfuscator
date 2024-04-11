@@ -74,8 +74,10 @@ namespace Z00bfuscator
             var configuration = asm.GetCustomAttribute<AssemblyConfigurationAttribute>()?.Configuration;
             var informationalVersion = asm.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
 
-            Console.WindowWidth = 140;
-            Console.BufferHeight = 5000;
+            if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Windows)) {
+                Console.WindowWidth = 140;
+                Console.BufferHeight = 5000;
+            }
             Console.Title = string.Format("{0} {1} ({2}) [{3}] {4}",
                 title,
                 version,
